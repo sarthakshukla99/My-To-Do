@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            background-color: black;
+            color: white;
+            font-size: 24px;
+        }
+
+        h1 {
+            text-align: center;
+            font-size: 54px;
+        }
+
+        #item {
+            width: 36vw;
+            height: 61px;
+            outline: none;
+            border-radius: 10px;
+            border: none;
+            display: block;
+            margin: auto;
+            margin-top: 22px;
+            margin-bottom: 28px;
+            font-size: 24px;
+        }
+
+        input::placeholder {
+            font-size: 24px;
+            text-align: center;
+        }
+
+        .btn_div {
+            width: 100%;
+            text-align: center;
+            margin-top: 2vh;
+        }
+
+        #btn {
+            padding: 12px;
+            width: 117px;
+            border: none;
+            border-radius: 10px;
+            background-color: hotpink;
+            color: white;
+            font-size: 19px;
+            /* text-align: center; */
+            /* margin-left: 44vw;
+            margin-top: 2vh; */
+        }
+
+        .head-list {
+            font-size: 28px;
+        }
+
+        .footer {
+            /* margin-top: 34vh; */
+            text-align: center;
+            font-size: 13px;
+            position: absolute;
+            bottom: 0;
+            width: 100%;
+        }
+
+        @media screen and (max-width:1090px) {
+
+            body {
+                font-size: 20px;
+            }
+
+            h1 {
+                margin: 18px 0;
+            }
+
+            /* #btn {
+                margin-left: 30vw;
+            } */
+
+            #item {
+                height: 46px;
+            }
+
+            .head-list {
+                text-align: center;
+            }
+        }
+
+        @media screen and (max-width:670px) {
+            #item {
+                height: 46px;
+                width: 300px;
+            }
+        }
+
+        @media screen and (max-width:400px) {
+            #item {
+                height: 40px;
+                width: 275px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <h1>MY To-Do </h1>
+    <input type="text" id="item" placeholder="to-do items">
+    <div class="btn_div">
+        <button id="btn">Add</button>
+    </div>
+
+    <h3 class="head-list">Your List of Future</h3>
+    <ul id="ul">
+
+    </ul>
+
+    <footer class="footer">
+        <p>Created by Sarthak Shukla </p>
+    </footer>
+
+
+    <script src="script.js"></script>
+</body>
+
+</html>
